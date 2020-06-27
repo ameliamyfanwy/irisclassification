@@ -38,4 +38,8 @@ knn = KNeighborsClassifier(n_neighbors=1)
 knn.fit(X_train, y_train)
 
 # Declaring new numpy array for data to test
-X_new = np.array([5, 2.9, 1, 0.2 ])
+X_new = np.array([[5, 2.9, 1, 0.2]])
+
+# Predict target based on test data
+prediction = knn.predict(X_new)
+print(prediction)
