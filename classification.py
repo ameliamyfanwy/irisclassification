@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt 
+import numpy as np
 
 from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
@@ -35,3 +36,6 @@ knn = KNeighborsClassifier(n_neighbors=1)
 
 # Use training data to produce best fit function
 knn.fit(X_train, y_train)
+
+# Declaring new numpy array for data to test
+X_new = np.array([5, 2.9, 1, 0.2 ])
