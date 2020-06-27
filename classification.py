@@ -1,4 +1,4 @@
-#import matplotlib.pylot as plt 
+import matplotlib.pyplot as plt 
 
 from sklearn.datasets import load_iris
 
@@ -16,4 +16,7 @@ sepal_width_label = iris.feature_names[1]
 petal_length_label = iris.feature_names[2]
 petal_width_label = iris.feature_names[3]
 
-print(petal_width_label)
+plt.scatter(sepal_length, sepal_width, c=iris.target)
+plt.xlabel(sepal_length_label)
+plt.ylabel(sepal_width_label)
+plt.show()
