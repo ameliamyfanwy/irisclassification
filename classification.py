@@ -30,3 +30,8 @@ iris = load_iris()
 # Splitting data for training using train_test_split
 X_train, X_test, y_train, y_test = train_test_split(iris['data'], iris['target'], random_state=0)
 
+# Set parameter for how many neighbours to compare to
+knn = KNeighborsClassifier(n_neighbors=1)
+
+# Use training data to produce best fit function
+knn.fit(X_train, y_train)
