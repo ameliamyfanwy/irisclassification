@@ -42,4 +42,4 @@ X_new = np.array([[5, 2.9, 1, 0.2]])
 
 # Predict target based on test data
 prediction = knn.predict(X_new)
-print(prediction)
+print(prediction.target)
