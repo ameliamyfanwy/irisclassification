@@ -16,7 +16,7 @@ sepal_width_label = iris.feature_names[1]
 petal_length_label = iris.feature_names[2]
 petal_width_label = iris.feature_names[3]
 
-plt.scatter(sepal_length, sepal_width, c=iris.target)
-plt.xlabel(sepal_length_label)
-plt.ylabel(sepal_width_label)
+plt.scatter(petal_length, petal_width, c=iris.target)
+plt.xlabel(petal_length_label)
+plt.ylabel(petal_width_label)
 plt.show()
