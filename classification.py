@@ -41,5 +41,8 @@ knn.fit(X_train, y_train)
 X_new = np.array([[5, 2.9, 1, 0.2]])
 
 # Predict target based on test data
-prediction = knn.predict(X_new)
-print(prediction.target)
+# prediction = knn.predict(X_new)
+# print(prediction)
+
+# Score how accurate the fit is for the test portion of split data
+print(knn.score(X_test, y_test))
